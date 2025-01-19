@@ -4,8 +4,6 @@ import { useEffect, useCallback, useRef } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { Form } from "@/components/ui/form";
-import { SessionConfig } from "@/components/session-config";
 import { TurnDetectionTypeId } from "@/data/turn-end-types";
 import { VoiceId } from "@/data/voices";
 import { ModelId } from "@/data/models";
@@ -17,10 +15,8 @@ import {
   useVoiceAssistant,
 } from "@livekit/components-react";
 import { ConnectionState } from "livekit-client";
-import { Button } from "@/components/ui/button";
 import { defaultSessionConfig } from "@/data/playground-state";
 import { useConnection } from "@/hooks/use-connection";
-import { RotateCcw } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { ModalitiesId } from "@/data/modalities";
 import { TranscriptionModelId } from "@/data/transcription-models";
