@@ -6,7 +6,6 @@ import {
   StartAudio,
 } from "@livekit/components-react";
 
-import { ConfigurationForm } from "@/components/configuration-form";
 import { Chat } from "@/components/chat";
 import { Transcript } from "@/components/transcript";
 import { useConnection } from "@/hooks/use-connection";
