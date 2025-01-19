@@ -38,7 +38,7 @@ export interface ConfigurationFormFieldProps {
   schema?: typeof ConfigurationFormSchema;
 }
 
-export function ConfigurationForm(props: any) {
+export function ConfigurationForm() {
   const { pgState, dispatch } = usePlaygroundState();
   const connectionState = useConnectionState();
   const { voice, disconnect, connect } = useConnection();
